@@ -52,6 +52,8 @@ class ErrorHandling
 
     public static function  check_404()
     {
+        ob_end_clean();
+
         global $requestURI, $URLs;
 
         # 404 page error
@@ -62,6 +64,8 @@ class ErrorHandling
 
     public static function check_405(string $requestMethod, string $methodAllowd)
     {
+        ob_end_clean();
+
         // Check for POST, GET method errors
 
         if ($requestMethod != $methodAllowd) {
