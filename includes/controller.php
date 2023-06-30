@@ -10,19 +10,14 @@ class Controller
 {
     public static function index()
     {
-        view('index.html');
+        view('index.php');
     }
-    public static function login()
+    public static function docs(DataHandling $data = null)
     {
-        $data = new DataHandling;
-
-        DB::table("users")->setTableId("id")->setFetchMode(PDO::FETCH_OBJ)->create(
-            [
-                'username' => $data->post->username,
-                'password' => $data->post->password,
-            ]
-        );
-
-        return redirect('https://instagram.com');
+        if (isset($data->get->page)) {
+            view('docs.php');
+        } else {
+            view('docs.php');
+        }
     }
 }

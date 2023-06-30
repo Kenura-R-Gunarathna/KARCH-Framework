@@ -6,4 +6,4 @@ use App\ErrorHandling;
 
 Route::get('/', Controller::class, 'index');
 
-Route::post('/login', Controller::class, 'login');
+Route::get('/docs', Controller::class, 'docs');

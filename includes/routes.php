@@ -5,7 +5,15 @@ namespace App;
 use App\ErrorHandling;
 
 $requestMethod = $_SERVER['REQUEST_METHOD'];
+
 $requestURI = $_SERVER['REQUEST_URI'];
+
+if (isset($_SERVER['PATH_INFO'])) {
+    $pathInfo = $_SERVER['PATH_INFO'];
+} else {
+    $pathInfo = '/';
+}
+
 $serverName = $_SERVER['SERVER_NAME'];
 
 $URLs = [];
@@ -24,11 +32,11 @@ class Route
 
     public static function response($uri, $methodAllowd, $callback, $classMethod)
     {
-        global $requestURI, $URLs, $requestMethod;
+        global $pathInfo, $URLs, $requestMethod;
 
         $URLs[$uri] = $callback;
 
-        if (($uri == $requestURI) || ('/' . $uri == $requestURI)) {
+        if (($uri == $pathInfo) || ('/' . $uri == $pathInfo)) {
 
             ErrorHandling::check_405($requestMethod, $methodAllowd);
 

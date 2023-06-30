@@ -2,6 +2,10 @@
 
 A light-weight and fast MVC framework for php developers. This is build with a system similar to Laravel and for people who require light-weight framework than Laravel can easily adapt to this as well.  
 
+## Instalation ##
+
+// to be soon...
+
 ## Routes ##
 
 Class for the routes are included inside the `routes` folder as `web.php`.
@@ -37,7 +41,9 @@ public static function login()
     // code...
 }
 ```
-## Views ##
+## Views and Redirects ##
+
+### Views ###
 
 To view a html or php file. All the view file locations are given relative to the `Views` folder. 
 
@@ -47,7 +53,7 @@ eg:- `/index.html` or `index.html` ( for a file as `index.html` inside the views
 view("{view-location}");
 ```
 
-## Redirects ##
+### Redirects ###
 
 To redirect a web page insert
 
@@ -56,6 +62,10 @@ redirect("{full-url}");
 ```
 
 here you should insert the full url of the web page.
+
+### Assets ###
+
+// continue coding...
 
 ## Requests ##
 
@@ -209,3 +219,47 @@ php databse\migrations\{migration-filename}.php
 
 ## Error Handling ##
 
+Class for the error handling are included inside the `includes` folder as `error_handling.php`.
+
+use 
+
+```
+use App\ErrorHandling;
+```
+to include the ErrorHandling class.
+
+### view the 404 error ###
+
+```
+ErrorHandling::_404();
+```
+
+for custom `404` error message
+
+```
+ErrorHandling::_404({error-message});
+```
+
+### view the 405 error ###
+
+```
+ErrorHandling::_405();
+```
+
+for custom `405` error message
+
+```
+ErrorHandling::_405({error-message});
+```
+
+### view the 500 error ###
+
+```
+ErrorHandling::_500();
+```
+
+for custom `500` error message
+
+```
+ErrorHandling::_500({error-message});
+```
