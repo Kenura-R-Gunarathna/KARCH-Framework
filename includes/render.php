@@ -11,7 +11,9 @@ function view($location, array $variables = null, array $error = null)
     $view_missing_error = $error->code . ' : ' . $error->message . ",\n\n View file for error is missing.";
 
     try {
-        extract($variables);
+        if (isset($variables)) {
+            extract($variables);
+        }
         @require_once __DIR__ . $views . $location;
     } catch (\Throwable $th) {
         if (!$error) {
@@ -30,4 +32,60 @@ function redirect($url)
     } catch (\Throwable $th) {
         return print("View file not found");
     }
+}
+
+function route($route)
+{
+    global $httpHost;
+
+    $protocol = isset($_SERVER['HTTPS']) ? 'https' : 'http';
+
+    if (substr($route, 0, 1) != '/') {
+        $route = '/' . $route;
+    }
+
+    return print($protocol . '://' . $httpHost . $route);
+}
+
+function request($parameter)
+{
+
+    $data = new App\DataHandling;
+
+    return print($data->request->$parameter);
+}
+
+function config($envName)
+{
+    $data = new App\DataHandling;
+
+    return print($data->env->$envName);
+}
+
+function get($parameter)
+{
+    $data = new App\DataHandling;
+
+    return print($data->get->$parameter);
+}
+
+function post($parameter)
+{
+    $data = new App\DataHandling;
+
+    return print($data->env->$parameter);
+}
+
+function cookie($parameter)
+{
+    $data = new App\DataHandling;
+
+    return print($data->cookie->$parameter);
+}
+
+function files($parameter)
+{
+    $data = new App\DataHandling;
+
+    return print($data->files->$parameter);
 }

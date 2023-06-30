@@ -4,6 +4,10 @@ namespace App;
 
 use App\ErrorHandling;
 
+// Start loading data from server
+
+$httpHost = $_SERVER['HTTP_HOST'];
+
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
 $requestURI = $_SERVER['REQUEST_URI'];
@@ -15,6 +19,8 @@ if (isset($_SERVER['PATH_INFO'])) {
 }
 
 $serverName = $_SERVER['SERVER_NAME'];
+
+// End loading data from server
 
 $URLs = [];
 

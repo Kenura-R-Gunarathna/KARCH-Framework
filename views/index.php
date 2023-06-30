@@ -1,12 +1,8 @@
 <?php
 
-use App\DataHandling;
-
-$DataHandling = new DataHandling;
-
 $title = "KARCH - Light weight framework for PHP";
 $description = "The best framework for your simple things to keep simpler. Developed by KRAG for php developers as a alternate for LARAVEL for light-weight websites.";
-$app_author = $DataHandling->env->APP_AUTHOR;
+$app_author = $data->env->APP_AUTHOR;
 
 ?>
 

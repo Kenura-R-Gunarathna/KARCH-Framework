@@ -9,51 +9,51 @@
         <ul class="section-items list-unstyled nav flex-column pb-3">
 
             <li class="nav-item section-title">
-                <a class="nav-link scrollto" href="#introduction">
+                <a class="nav-link scrollto" href="<?php route('docs?page=introduction'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>
                     Introduction
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="#installation">
+                <a class="nav-link scrollto" href="<?php route('docs?page=installation'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>
                     Installation
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="#routes">
+                <a class="nav-link scrollto" href="<?php route('docs?page=routes'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>
                     Routes
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="#controllers">
+                <a class="nav-link scrollto" href="<?php route('docs?page=controllers'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>
                     Controllers
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="#views-redirects-and-assets">
+                <a class="nav-link scrollto" href="<?php route('docs?page=views-redirects-assets'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>
                     Views, Redirects, Assets
                 </a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#views">Views</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#redirects">Redirects</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#assets">Assets</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=views-redirects-assets#views'); ?>">Views</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=views-redirects-assets#redirects'); ?>">Redirects</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=views-redirects-assets#assets'); ?>">Assets</a></li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="#section-6">
+                <a class="nav-link scrollto" href="<?php route('docs?page=assets'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>
                     Assets
                 </a>
             </li>
 
-            <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#requests">
+            <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="<?php route('docs?page=requests'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>
                     Requests
                 </a>
@@ -65,7 +65,7 @@
             <li class="nav-item"><a class="nav-link scrollto" href="#post-requests">POST Requests</a></li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="#database-queries">
+                <a class="nav-link scrollto" href="<?php route('docs?page=database-queries'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>
                     Database Queries
                 </a>
