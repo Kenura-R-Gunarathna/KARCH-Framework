@@ -1,4 +1,4 @@
-<article class="docs-article" id="section-1">
+<article class="docs-article">
 
     <header class="docs-header">
 

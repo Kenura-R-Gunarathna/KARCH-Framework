@@ -23,6 +23,12 @@ class DataHandling
         $this->request = (object) $_REQUEST;
         $this->files = (object) $_FILES;
 
+        if (isset($_SESSION)) {
+            $this->session = (object) $_SESSION;
+        } else {
+            $this->session = null;
+        }
+
         // Looing for .env at the root directory
         $env = parse_ini_file('.env');
         $this->env = (object) $env;

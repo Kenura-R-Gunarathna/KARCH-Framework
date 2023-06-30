@@ -63,6 +63,7 @@ redirect("{full-url}");
 
 here you should insert the full url of the web page.
 
+
 ### Assets ###
 
 // continue coding...
@@ -78,11 +79,13 @@ use App\DataHandling;
 ```
 to include the requests class.
 
+```
+$data = new DataHandling();
+```
+
 ### env data ###
 
 ```
-$data = new DataHandling();
-
 echo $data->env->APP_NAME;
 ```
 

@@ -58,11 +58,13 @@
                     Requests
                 </a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#env-data">ENV Data</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#get-post-and-session-requests">
-                    All Requests</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#get-requests">GET Requests</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#post-requests">POST Requests</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#env-data'); ?>">ENV Data</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#all-requests'); ?>">All Requests</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#get-requests'); ?>">GET Requests</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#post-requests'); ?>">POST Requests</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#file-requests'); ?>">File Requests</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#session-requests'); ?>">Session Requests</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#cookie-requests'); ?>">Cookie Requests</a></li>
 
             <li class="nav-item section-title mt-3">
                 <a class="nav-link scrollto" href="<?php route('docs?page=database-queries'); ?>">
@@ -70,34 +72,28 @@
                     Database Queries
                 </a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#records-selection">Records selection</a>
-            </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#mass-records-insert">
-                    Mass records insert</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#single-record-insert">
-                    Single record insert</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#records-selection">Records selection</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#mass-records-insert">Mass records insert</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#single-record-insert">Single record insert</a></li>
             <li class="nav-item"><a class="nav-link scrollto" href="#update-records">Update records</a></li>
             <li class="nav-item"><a class="nav-link scrollto" href="#delete-records">Delete records</a></li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="#migrations">
+                <a class="nav-link scrollto" href="<?php route('docs?page=migrations'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>
                     Migrations
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="#error-handling">
+                <a class="nav-link scrollto" href="<?php route('docs?page=error-handling'); ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>
                     Error Handling
                 </a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#view-the-404-error">View the 404 error</a>
-            </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#view-the-405-error">View the 405 error</a>
-            </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="#view-the-500-error">View the 500 error</a>
-            </li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=error-handling#view-the-404-error'); ?>">View the 404 error</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=error-handling#view-the-405-error'); ?>">View the 405 error</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=error-handling#view-the-500-error'); ?>">View the 500 error</a></li>
         </ul>
 
     </nav><!--//docs-nav-->

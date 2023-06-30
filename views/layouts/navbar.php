@@ -9,18 +9,19 @@
                         <span class="logo-text">KARCH <!--span class="text-alt">Framework</span--></span>
                     </a>
                 </div>
-            </div><!--/docs-logo-wrapper-->
+            </div>
 
             <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+                <!-- social-list -->
                 <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
                     <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-                </ul><!--//social-list-->
-                <a href="https://github.com/Kenura-R-Gunarathna/KARCH.git" class="btn btn-primary d-none d-lg-flex">Download</a>
-            </div><!--/docs-top-utilities-->
+                </ul>
+                <a href="<?php config('GITHUB_REPO'); ?>" target="_blank" class="btn btn-primary d-none d-lg-flex">Download</a>
+            </div>
 
-        </div><!--//container-->
-    </div><!--//branding-->
-</header><!--//header-->
+        </div>
+    </div>
+</header>

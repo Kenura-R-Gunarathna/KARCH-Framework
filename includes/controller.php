@@ -46,6 +46,22 @@ class Controller
                     $page = 'views-redirects-assets';
                     break;
 
+                case 'requests':
+                    $page = 'requests';
+                    break;
+
+                case 'database-queries':
+                    $page = 'database-queries';
+                    break;
+
+                case 'migrations':
+                    $page = 'migrations';
+                    break;
+
+                case 'error-handling':
+                    $page = 'error-handling';
+                    break;
+
                 default:
                     return ErrorHandling::_404();
                     break;
