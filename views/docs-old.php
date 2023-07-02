@@ -166,13 +166,13 @@ $body_class = "docs-page";
 
                     <div class="simplelightbox-gallery row mb-3">
                         <div class="col-12 col-md-4 mb-3">
-                            <a href="public/assets/images/coderpro-home.png"><img class="figure-img img-fluid shadow rounded" src="public/assets/images/coderpro-home-thumb.png" alt="" title="CoderPro Home Page" /></a>
+                            <a href="public/images/coderpro-home.png"><img class="figure-img img-fluid shadow rounded" src="public/images/coderpro-home-thumb.png" alt="" title="CoderPro Home Page" /></a>
                         </div>
                         <div class="col-12 col-md-4 mb-3">
-                            <a href="public/assets/images/coderpro-features.png"><img class="figure-img img-fluid shadow rounded" src="public/assets/images/coderpro-features-thumb.png" alt="" title="CoderPro Features Page" /></a>
+                            <a href="public/images/coderpro-features.png"><img class="figure-img img-fluid shadow rounded" src="public/images/coderpro-features-thumb.png" alt="" title="CoderPro Features Page" /></a>
                         </div><!--//col-->
                         <div class="col-12 col-md-4 mb-3">
-                            <a href="public/assets/images/coderpro-pricing.png"><img class="figure-img img-fluid shadow rounded" src="public/assets/images/coderpro-pricing-thumb.png" alt="" title="CoderPro Pricing Page" /></a>
+                            <a href="public/images/coderpro-pricing.png"><img class="figure-img img-fluid shadow rounded" src="public/images/coderpro-pricing-thumb.png" alt="" title="CoderPro Pricing Page" /></a>
                         </div><!--//col-->
 
                     </div><!--//gallery-->

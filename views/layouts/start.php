@@ -10,20 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php print($description); ?>">
     <meta name="author" content="<?php print($app_author); ?>">
-    <link rel="shortcut icon" href="public/assets/images/favicon.png">
+    <link rel="shortcut icon" href="public/images/favicon.png">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome JS-->
-    <script defer src="public/assets/fontawesome/js/all.min.js"></script>
+    <script defer src="public/fontawesome/js/all.min.js"></script>
 
     <!-- Plugins CSS -->
     <!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"-->
-    <link rel="stylesheet" href="public/assets/plugins/simplelightbox/simple-lightbox.min.css">
+    <link rel="stylesheet" href="public/plugins/simplelightbox/simple-lightbox.min.css">
 
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="public/assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="public/css/theme.css">
 
 </head>
 
