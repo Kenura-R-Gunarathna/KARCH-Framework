@@ -8,7 +8,11 @@ A light-weight and fast MVC framework for php developers. This is build with a s
 
 ## Instalation ##
 
-// to be soon...
+Using the git repository url download the framework from github or run the following code on the terminal, opened in your folder.
+
+```
+git clone https://github.com/Kenura-R-Gunarathna/KARCH
+```
 
 ## Routes ##
 
