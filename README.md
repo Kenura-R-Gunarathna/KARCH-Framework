@@ -1,7 +1,7 @@
 
-<center>
+<p align="center">
     <img src="./public/assets/images/github-logo.png" width="300px" alt="KARCH Logo" />
-</center>
+</p>
 
 A light-weight and fast MVC framework for php developers. This is build with a system similar to Laravel and for people who require light-weight framework than Laravel can easily adapt to this as well.  
 
