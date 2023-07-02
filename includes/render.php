@@ -47,6 +47,15 @@ function route($route)
     return print($protocol . '://' . $httpHost . $route);
 }
 
+function asset($path)
+{
+    if (substr($path, 0, 1) != '/') {
+        $path = '/' . $path;
+    }
+
+    route($path . '/public' . $path);
+}
+
 function request($parameter)
 {
 
@@ -88,4 +97,16 @@ function files($parameter)
     $data = new App\DataHandling;
 
     return print($data->files->$parameter);
+}
+
+function session($parameter)
+{
+    $data = new App\DataHandling;
+
+    if (isset($_SESSION)) {
+        $data->session = (object) $_SESSION;
+    } else {
+        $data->session = null;
+    }
+    return print($data->session->$parameter);
 }

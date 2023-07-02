@@ -12852,13 +12852,13 @@ a.text-link:hover {
 }
 
 .btn-light {
-    background: #f4fcf6;
-    color: #28b76b
+    background: #f4f8fc;
+    color: #2196F3;
 }
 
 .btn-light:hover {
     background: #f4fcf6;
-    color: #28b76b
+    color: #0d6efd;
 }
 
 .form-control {

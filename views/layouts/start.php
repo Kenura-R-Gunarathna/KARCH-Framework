@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php print($description); ?>">
     <meta name="author" content="<?php print($app_author); ?>">
-    <link rel="shortcut icon" href="public/assets/images/favicon.ico">
+    <link rel="shortcut icon" href="public/assets/images/favicon.png">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">

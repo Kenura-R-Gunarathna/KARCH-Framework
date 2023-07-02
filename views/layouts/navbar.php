@@ -5,7 +5,7 @@
             <div class="docs-logo-wrapper">
                 <div class="site-logo">
                     <a class="navbar-brand" href="/">
-                        <img class="logo-icon me-2" src="public/assets/images/coderdocs-logo.svg" alt="logo">
+                        <img class="logo-icon me-2" src="public/assets/images/favicon.png" alt="Karch Logo" width="50px">
                         <span class="logo-text">KARCH <!--span class="text-alt">Framework</span--></span>
                     </a>
                 </div>

@@ -63,10 +63,79 @@ redirect("{full-url}");
 
 here you should insert the full url of the web page.
 
-
 ### Assets ###
 
-// continue coding...
+To load the assets like images, documents and videos for public view insert
+
+```
+asset("{relative-url-from-public-folder}");
+```
+
+here you should insert the relative url of the files inside the `public` folder skiping `../public/` part of the relative url.
+
+### Route ###
+
+Return the `url` of a specific `route` in the website.
+
+```
+route("{route-name-or-uri}");
+```
+
+### Request ###
+
+Return the `$_REQUEST` values of the website.
+
+```
+request("{request-name}");
+```
+
+### Config ###
+
+Return the `$_ENV` values of the website inside the `.env` file.
+
+```
+config("{config-name}");
+```
+
+### Get ###
+
+Return the `$_GET` request values of the website.
+
+```
+get("{get-request-name}");
+```
+
+### Post ###
+
+Return the `$_POST` request values of the website.
+
+```
+post("{post-request-name}");
+```
+
+### Cookie ###
+
+Return the `$_COOKIE` values of the website.
+
+```
+cookie("{cookie-name}");
+```
+
+### Files ###
+
+Return the `$_FILES` values of the website.
+
+```
+files("{file-name}");
+```
+
+### Session ###
+
+Return the `$_SESSION` values of the website stored in the web server.
+
+```
+session("{session-name}");
+```
 
 ## Requests ##
 

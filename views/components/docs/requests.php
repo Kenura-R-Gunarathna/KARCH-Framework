@@ -26,7 +26,7 @@
 
     </section>
 
-    <section class="docs-section" id="all-requests">
+    <section class="docs-section" id="all-request">
 
         <h2 class="section-heading">All requests</h2>
 
@@ -36,7 +36,7 @@
 
     </section>
 
-    <section class="docs-section" id="get-requests">
+    <section class="docs-section" id="get-request">
 
         <h2 class="section-heading">Get request</h2>
 
@@ -46,7 +46,7 @@
 
     </section>
 
-    <section class="docs-section" id="post-requests">
+    <section class="docs-section" id="post-request">
 
         <h2 class="section-heading">Post request</h2>
 
@@ -56,7 +56,7 @@
 
     </section>
 
-    <section class="docs-section" id="file-requests">
+    <section class="docs-section" id="file-request">
 
         <h2 class="section-heading">File request</h2>
 
@@ -66,7 +66,7 @@
 
     </section>
 
-    <section class="docs-section" id="session-requests">
+    <section class="docs-section" id="session-request">
 
         <h2 class="section-heading">Session request</h2>
 

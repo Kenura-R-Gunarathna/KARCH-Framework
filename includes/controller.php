@@ -42,8 +42,8 @@ class Controller
                     $page = 'controllers';
                     break;
 
-                case 'views-redirects-assets':
-                    $page = 'views-redirects-assets';
+                case 'special-functions':
+                    $page = 'special-functions';
                     break;
 
                 case 'requests':
