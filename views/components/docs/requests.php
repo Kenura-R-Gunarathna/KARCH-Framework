@@ -2,7 +2,7 @@
 
     <header class="docs-header">
 
-        <h1 class="docs-heading">Requests <span class="docs-time">Last updated: <?php config('LAST_UPDATED'); ?></span></h1>
+        <h1 class="docs-heading">Requests <span class="docs-time">Last updated: <?php print(config('LAST_UPDATED')) ?></span></h1>
 
         <p>Class for the requests are included inside the <code>includes</code> folder as <code>data_handling.php</code>.</p>
 

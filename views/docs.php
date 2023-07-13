@@ -1,8 +1,8 @@
 <?php
 
-$title = "KARCH Documentation";
-$description = "KARCH is the best choise for a developer new to php. It is easy to grasp the KARCH framwork and made by using the basic concepts of php.";
-$app_author = $data->env->APP_AUTHOR;
+$title = " Documentation";
+$description = config("APP_NAME") . " is the best choise for a developer new to php. It is easy to grasp the " . config("APP_NAME") . " framwork and made by using the basic concepts of php.";
+$app_author = config("APP_AUTHOR");
 
 $body_class = "docs-page";
 
@@ -26,7 +26,5 @@ $body_class = "docs-page";
 		</div>
 	</div>
 </div><!--//docs-wrapper-->
-
-
 
 <?php require_once __DIR__ . "/layouts/end.php"; ?>

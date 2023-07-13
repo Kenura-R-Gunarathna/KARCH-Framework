@@ -2,7 +2,7 @@
 
     <header class="docs-header">
 
-        <h1 class="docs-heading">Error Handling <span class="docs-time">Last updated: <?php config('LAST_UPDATED'); ?></span></h1>
+        <h1 class="docs-heading">Error Handling <span class="docs-time">Last updated: <?php print(config('LAST_UPDATED')) ?></span></h1>
 
         <p>Class for the error handling are included inside the <code>includes</code> folder as <code>error_handling.php</code>.</p>
 

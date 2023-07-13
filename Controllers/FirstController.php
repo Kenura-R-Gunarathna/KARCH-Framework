@@ -1,13 +1,14 @@
 <?php
 
-namespace App;
+namespace Karch\App\Controllers;
 
-use App\DataHandling;
 use PDO;
 use App\DB;
+use App\Controller;
+use App\DataHandling;
 use App\ErrorHandling;
 
-class Controller
+class FirstController extends Controller
 {
     public static function index()
     {

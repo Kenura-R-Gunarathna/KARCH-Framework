@@ -2,7 +2,7 @@
 
     <header class="docs-header">
 
-        <h1 class="docs-heading">Database Queries <span class="docs-time">Last updated: <?php config('LAST_UPDATED'); ?></span></h1>
+        <h1 class="docs-heading">Database Queries <span class="docs-time">Last updated: <?php print(config('LAST_UPDATED')) ?></span></h1>
 
         <p>Class for the db queries are included inside the <code>includes</code> folder as <code>database.php</code>.</p>
 

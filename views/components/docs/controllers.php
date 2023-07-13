@@ -2,7 +2,7 @@
 
     <header class="docs-header">
 
-        <h1 class="docs-heading">Controllers <span class="docs-time">Last updated: <?php config('LAST_UPDATED'); ?></span></h1>
+        <h1 class="docs-heading">Controllers <span class="docs-time">Last updated: <?php print(config('LAST_UPDATED')) ?></span></h1>
 
         <p>Class for the controllers are included inside the <code>routes</code> folder as <code>controller.php</code>.</p>
 

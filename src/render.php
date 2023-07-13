@@ -1,7 +1,11 @@
 <?php
 
+use App\DataHandling;
+
 function view($location, array $variables = null, array $error = null)
 {
+    global $requestURI; // load all the public variables
+
     if (!isset($error)) {
         $error = ['code' => 404, 'message' => 'Page not found'];
     }
@@ -14,12 +18,12 @@ function view($location, array $variables = null, array $error = null)
         if (isset($variables)) {
             extract($variables);
         }
-        @require_once __DIR__ . $views . $location;
+        return require_once __DIR__ . $views . $location;
     } catch (\Throwable $th) {
         if (!$error) {
-            return print("View file not found");
+            return "View file not found";
         } else {
-            return print($view_missing_error);
+            return $view_missing_error;
         }
     }
 }
@@ -30,7 +34,7 @@ function redirect($url)
         header("Location: $url");
         exit();
     } catch (\Throwable $th) {
-        return print("View file not found");
+        return "View file not found";
     }
 }
 
@@ -44,7 +48,7 @@ function route($route)
         $route = '/' . $route;
     }
 
-    return print($protocol . '://' . $httpHost . $route);
+    return $protocol . '://' . $httpHost . $route;
 }
 
 function asset($path)
@@ -53,60 +57,60 @@ function asset($path)
         $path = '/' . $path;
     }
 
-    route($path . '/public' . $path);
+    return route('public' . $path);
 }
 
 function request($parameter)
 {
 
-    $data = new App\DataHandling;
+    $data = new DataHandling;
 
-    return print($data->request->$parameter);
+    return $data->request->$parameter;
 }
 
 function config($envName)
 {
-    $data = new App\DataHandling;
+    $data = new DataHandling;
 
-    return print($data->env->$envName);
+    return $data->env->$envName;
 }
 
 function get($parameter)
 {
-    $data = new App\DataHandling;
+    $data = new DataHandling;
 
-    return print($data->get->$parameter);
+    return $data->get->$parameter;
 }
 
 function post($parameter)
 {
-    $data = new App\DataHandling;
+    $data = new DataHandling;
 
-    return print($data->env->$parameter);
+    return $data->env->$parameter;
 }
 
 function cookie($parameter)
 {
-    $data = new App\DataHandling;
+    $data = new DataHandling;
 
-    return print($data->cookie->$parameter);
+    return $data->cookie->$parameter;
 }
 
 function files($parameter)
 {
-    $data = new App\DataHandling;
+    $data = new DataHandling;
 
-    return print($data->files->$parameter);
+    return $data->files->$parameter;
 }
 
 function session($parameter)
 {
-    $data = new App\DataHandling;
+    $data = new DataHandling;
 
     if (isset($_SESSION)) {
         $data->session = (object) $_SESSION;
     } else {
         $data->session = null;
     }
-    return print($data->session->$parameter);
+    return $data->session->$parameter;
 }

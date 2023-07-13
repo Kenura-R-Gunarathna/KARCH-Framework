@@ -2,7 +2,7 @@
 
     <header class="docs-header">
 
-        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: <?php config('LAST_UPDATED'); ?></span></h1>
+        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: <?php print(config('LAST_UPDATED')) ?></span></h1>
 
         <p>A light-weight and fast MVC framework for php developers.
             This is build with a system similar to Laravel. Developers

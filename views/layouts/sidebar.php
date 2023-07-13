@@ -9,35 +9,35 @@
         <ul class="section-items list-unstyled nav flex-column pb-3">
 
             <li class="nav-item section-title">
-                <a class="nav-link scrollto" href="<?php route('docs?page=introduction'); ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=introduction')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>
                     Introduction
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="<?php route('docs?page=installation'); ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=installation')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>
                     Installation
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="<?php route('docs?page=routes'); ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=routes')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>
                     Routes
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="<?php route('docs?page=controllers'); ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=controllers')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>
                     Controllers
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="<?php route('docs?page=special-functions'); ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions')) ?>">
                     <span class="theme-icon-holder me-2">
                         <svg width="20px" viewBox="-5 0 54 54" fill="#1271ff" xmlns="http://www.w3.org/2000/svg">
                             <g id="Layer_2" data-name="Layer 2">
@@ -58,59 +58,59 @@
                     Special Functions
                 </a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#views'); ?>">Views</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#redirects'); ?>">Redirects</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#assets'); ?>">Assets</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#route'); ?>">Route</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#request'); ?>">Request</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#config'); ?>">Config</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#get'); ?>">Get</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#post'); ?>">Post</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#cookie'); ?>">Cookie</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#files'); ?>">Files</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=special-functions#session'); ?>">Session</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#views')) ?>">Views</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#redirects')) ?>">Redirects</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#assets')) ?>">Assets</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#route')) ?>">Route</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#request')) ?>">Request</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#config')) ?>">Config</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#get')) ?>">Get</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#post')) ?>">Post</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#cookie')) ?>">Cookie</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#files')) ?>">Files</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=special-functions#session')) ?>">Session</a></li>
 
-            <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="<?php route('docs?page=requests'); ?>">
+            <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="<?php print(route('docs?page=requests')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>
                     Requests
                 </a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#env-data'); ?>">ENV Data</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#all-request'); ?>">All Request</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#get-request'); ?>">GET Request</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#post-request'); ?>">POST Request</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#file-request'); ?>">File Request</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#session-request'); ?>">Session Request</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=requests#cookie-request'); ?>">Cookie Request</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=requests#env-data')) ?>">ENV Data</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=requests#all-request')) ?>">All Request</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=requests#get-request')) ?>">GET Request</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=requests#post-request')) ?>">POST Request</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=requests#file-request')) ?>">File Request</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=requests#session-request')) ?>">Session Request</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=requests#cookie-request')) ?>">Cookie Request</a></li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="<?php route('docs?page=database-queries'); ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=database-queries')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>
                     Database Queries
                 </a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=database-queries#records-selection'); ?>">Records selection</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=database-queries#mass-records-insert'); ?>">Mass records insert</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=database-queries#single-record-insert'); ?>">Single record insert</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=database-queries#update-records'); ?>">Update records</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=database-queries#delete-records'); ?>">Delete records</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=database-queries#records-selection')) ?>">Records selection</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=database-queries#mass-records-insert')) ?>">Mass records insert</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=database-queries#single-record-insert')) ?>">Single record insert</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=database-queries#update-records')) ?>">Update records</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=database-queries#delete-records')) ?>">Delete records</a></li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="<?php route('docs?page=migrations'); ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=migrations')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>
                     Migrations
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="<?php route('docs?page=error-handling'); ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=error-handling')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>
                     Error Handling
                 </a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=error-handling#view-the-404-error'); ?>">View the 404 error</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=error-handling#view-the-405-error'); ?>">View the 405 error</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" href="<?php route('docs?page=error-handling#view-the-500-error'); ?>">View the 500 error</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=error-handling#view-the-404-error')) ?>">View the 404 error</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=error-handling#view-the-405-error')) ?>">View the 405 error</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="<?php print(route('docs?page=error-handling#view-the-500-error')) ?>">View the 500 error</a></li>
         </ul>
 
     </nav><!--//docs-nav-->

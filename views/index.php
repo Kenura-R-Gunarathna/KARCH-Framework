@@ -1,8 +1,8 @@
 <?php
 
-$title = "KARCH - Light weight framework for PHP";
+$title = config("APP_NAME") . " - Light weight framework for PHP";
 $description = "The best framework for your simple things to keep simpler. Developed by KRAG for php developers as a alternate for LARAVEL for light-weight websites.";
-$app_author = $data->env->APP_AUTHOR;
+$app_author = config("APP_AUTHOR");
 
 ?>
 

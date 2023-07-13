@@ -1,0 +1,20 @@
+{
+    "name": "krag/karch",
+    "description": "A light-weight and fast MVC framework for php developers. This is build with a system similar to Laravel and for people who require light-weight framework than Laravel can easily adapt to this as well.",
+    "type": "project",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "App\\Controllers\\": "Controllers/",
+            "App\\Models\\": "Models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kenura R. Gunarathna",
+            "email": "kenuragunarathna@gmail.com"
+        }
+    ],
+    "require": {}
+}
