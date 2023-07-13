@@ -1,8 +1,7 @@
 <?php
 
-require_once __DIR__ . '/../../includes/error_handling.php';
-require_once __DIR__ . '/../../includes/database.php';
-require_once __DIR__ . '/../../includes/data_handling.php';
+require_once(__DIR__ . '/../../src/site_data.php');
+include_once(__DIR__ . '/../../vendor/autoload.php');
 
 use App\DB;
 use App\DataHandling;

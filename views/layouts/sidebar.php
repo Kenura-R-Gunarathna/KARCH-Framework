@@ -9,14 +9,14 @@
         <ul class="section-items list-unstyled nav flex-column pb-3">
 
             <li class="nav-item section-title">
-                <a class="nav-link scrollto" href="<?php print(route('docs?page=introduction')) ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=intro')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>
                     Introduction
                 </a>
             </li>
 
             <li class="nav-item section-title mt-3">
-                <a class="nav-link scrollto" href="<?php print(route('docs?page=installation')) ?>">
+                <a class="nav-link scrollto" href="<?php print(route('docs?page=install')) ?>">
                     <span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>
                     Installation
                 </a>

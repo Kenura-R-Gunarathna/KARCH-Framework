@@ -16,7 +16,7 @@
                                 A light-weight and fast MVC framework for php developers.
                                 This is build with a system similar to Laravel.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=introduction')) ?>"></a>
+                            <a class="card-link-mask" href="<?php print(route('docs?page=intro')) ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -34,7 +34,7 @@
                                 Using the git repository url download the framework from github
                                 or run the given code on the terminal, opened in your folder.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=installation')) ?>"></a>
+                            <a class="card-link-mask" href="<?php print(route('docs?page=install')) ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->

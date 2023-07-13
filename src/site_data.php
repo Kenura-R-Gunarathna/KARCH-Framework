@@ -8,10 +8,14 @@ $requestMethod = $_SERVER['REQUEST_METHOD'];
 
 $requestURI = $_SERVER['REQUEST_URI'];
 
-if (isset($_SERVER['PATH_INFO'])) {
-    $pathInfo = $_SERVER['PATH_INFO'];
+if (isset($_SERVER["REDIRECT_URL"])) {
+    $pathInfo = $_SERVER["REDIRECT_URL"];
 } else {
-    $pathInfo = '/';
+    if (isset($_SERVER["PATH_INFO"])) {
+        $pathInfo = $_SERVER["PATH_INFO"];
+    } else {
+        $pathInfo = "/";
+    }
 }
 
 $serverName = $_SERVER['SERVER_NAME'];

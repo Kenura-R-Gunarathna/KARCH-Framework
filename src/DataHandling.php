@@ -28,7 +28,7 @@ class DataHandling
         }
 
         // Looing for .env at the root directory
-        $env = parse_ini_file('.env');
+        $env = parse_ini_file(__DIR__ . '/../.env');
         $this->env = (object) $env;
     }
 }

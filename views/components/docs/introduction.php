@@ -9,7 +9,7 @@
             who have experience on Laravel can easily adopt to uour light-weight framework.</p>
 
         <h5>Github Code Example:</h5>
-        <p>You can refer and star our repository on <a class="theme-link" href="<?php config('GITHUB_REPO'); ?>" target="_blank">Github</a> as well.</p>
+        <p>You can refer and star our repository on <a class="theme-link" href="<?php print(config('GITHUB_REPO')); ?>" target="_blank">Github</a> as well.</p>
 
         <h5>Requirements:</h5>
         <ul>

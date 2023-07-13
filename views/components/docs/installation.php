@@ -6,7 +6,7 @@
 
         <p>Using the git repository url download the framework from github.</p>
 
-        <code class="code-xl"><?php config('GITHUB_REPO'); ?></code>
+        <code class="code-xl"><?php print(config('GITHUB_REPO')); ?></code>
 
         <p>Or run the following code on the terminal, opened in your folder.</p>
 

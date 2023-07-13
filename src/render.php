@@ -10,7 +10,7 @@ function view($location, array $variables = null, array $error = null)
         $error = ['code' => 404, 'message' => 'Page not found'];
     }
 
-    $views = "/../views/";
+    $views = "/../Views/";
     $error = (object) $error;
     $view_missing_error = $error->code . ' : ' . $error->message . ",\n\n View file for error is missing.";
 

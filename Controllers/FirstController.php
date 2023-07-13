@@ -27,11 +27,11 @@ class FirstController extends Controller
 
             switch ($data->get->page) {
 
-                case 'introduction':
-                    $page = 'introduction';
+                case 'intro':
+                    $page = 'Introduction';
                     break;
 
-                case 'installation':
+                case 'install':
                     $page = 'installation';
                     break;
 
