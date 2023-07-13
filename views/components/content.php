@@ -16,7 +16,7 @@
                                 A light-weight and fast MVC framework for php developers.
                                 This is build with a system similar to Laravel.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=intro')) ?>"></a>
+                            <a class="card-link-mask" href="<?= config('KARCH_URL') . '/docs?page=intro' ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -34,7 +34,7 @@
                                 Using the git repository url download the framework from github
                                 or run the given code on the terminal, opened in your folder.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=install')) ?>"></a>
+                            <a class="card-link-mask" href="<?= config('KARCH_URL') . '/docs?page=install' ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -52,7 +52,7 @@
                                 You can setup routes similar to the laravel framework.
                                 manage the routes seperately in the web.php file.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=routes')) ?>"></a>
+                            <a class="card-link-mask" href="<?= config('KARCH_URL') . '/docs?page=routes' ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -70,7 +70,7 @@
                                 According to the MVC pattern you can integrated controllers
                                 in to your website. you can have many controllers just by registering them.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=controllers')) ?>"></a>
+                            <a class="card-link-mask" href="<?= config('KARCH_URL') . '/docs?page=controllers' ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -103,7 +103,7 @@
                                 globally inside the framework. You have to pass the values to
                                 the function and it will return the result.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=special-functions')) ?>"></a>
+                            <a class="card-link-mask" href="<?= config('KARCH_URL') . '/docs?page=special-functions' ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -121,7 +121,7 @@
                                 All the $_COOKIE, $_ENV, $_FILES, $_POST, $_GET, $_SERVER,
                                 $_SESSION, $_REQUEST can be accessed by this feature.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=requests')) ?>"></a>
+                            <a class="card-link-mask" href="<?= config('KARCH_URL') . '/docs?page=requests' ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -140,7 +140,7 @@
                                 interface to creating and running database queries similar to
                                 the Laravel query builder.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=database-queries')) ?>"></a>
+                            <a class="card-link-mask" href="<?= config('KARCH_URL') . '/docs?page=database-queries' ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -158,7 +158,7 @@
                                 Migrations are like version control for your database, allowing your
                                 team to define and share the application's database schema definition.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=migrations')) ?>"></a>
+                            <a class="card-link-mask" href="<?= config('KARCH_URL') . '/docs?page=migrations' ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -176,7 +176,7 @@
                                 Output the 404, 405 and 500 errors with default and custom
                                 messages similar to the Laravel framework.
                             </div>
-                            <a class="card-link-mask" href="<?php print(route('docs?page=error-handling')) ?>"></a>
+                            <a class="card-link-mask" href="<?= config('KARCH_URL') . '/docs?page=error-handling' ?>"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
