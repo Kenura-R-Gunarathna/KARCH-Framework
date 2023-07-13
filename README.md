@@ -5,13 +5,29 @@
 
 A light-weight and fast MVC framework for php developers. This is build with a system similar to Laravel and for people who require light-weight framework than Laravel can easily adapt to this as well.  
 
+Content :
+
+1. [Instalation](#instalation)
+2. [Routes](#routes)
+3. [Controllers](#controllers)
+4. [Special Functions](#special-functions)
+5. [Requests](#requests)
+6. [Database Queries](#database-queries)
+7. [Migrations](#migrations)
+8. [Error Handling](#error-handling)
 
 ## Instalation ##
+
+Using composer,
+
+```
+composer create-project krag/karch example-app
+```
 
 Using the git repository url download the framework from github or run the following code on the terminal, opened in your folder.
 
 ```
-git clone https://github.com/Kenura-R-Gunarathna/KARCH
+git clone https://github.com/Kenura-R-Gunarathna/KARCH-Framework.git
 ```
 
 ## Routes ##
@@ -49,7 +65,7 @@ public static function login()
     // code...
 }
 ```
-## Views and Redirects ##
+## Special Functions ##
 
 ### Views ###
 
