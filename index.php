@@ -1,5 +1,10 @@
 <?php
 
+require_once(__DIR__ . '/src/site_data.php');
+include_once(__DIR__ . '/vendor/autoload.php');
+require_once(__DIR__ . '/src/render.php');
+require_once(__DIR__ . "/Routes/web.php");
+
 use App\ErrorHandling;
 
 try {
@@ -10,7 +15,6 @@ try {
     });
 
     ob_start();
-    include_once(__DIR__ . '/vendor/autoload.php');
 } catch (\Throwable $th) {
 
     if (ob_get_contents()) ob_end_clean();

@@ -1,6 +1,6 @@
 <?php
 
-namespace Karch\App\Controllers;
+namespace App\Controllers;
 
 use PDO;
 use App\DB;

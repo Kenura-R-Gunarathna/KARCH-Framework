@@ -1,9 +1,8 @@
 <?php
 
 use App\Route;
-use App\Controller;
-use App\ErrorHandling;
+use App\Controllers\FirstController;
 
-Route::get('/', Controller::class, 'index');
+Route::get('/', FirstController::class, 'index');
 
-Route::get('/docs', Controller::class, 'docs');
+Route::get('/docs', FirstController::class, 'docs');
