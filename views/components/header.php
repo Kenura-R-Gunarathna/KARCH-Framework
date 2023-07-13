@@ -6,10 +6,10 @@
         <div class="page-intro single-col-max mx-auto">Your application is now ready and you can start working on it.
         </div>
         <div class="main-search-box pt-3 d-block mx-auto">
-            <form class="search-form w-100">
+            <!--form class="search-form w-100">
                 <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
                 <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-            </form>
+            </form-->
         </div>
     </div>
 </div><!--//page-header-->
