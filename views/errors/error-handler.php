@@ -16,7 +16,6 @@
 
 <body>
 
-
     <section class="bg-white dark:bg-gray-900 flex h-screen">
         <div class="py-8 px-4 max-w-screen-xl w-full lg:py-16 lg:px-6 m-auto">
             <div class="mx-auto max-w-screen-sm w-full">
