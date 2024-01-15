@@ -21,13 +21,13 @@ Content :
 
 Using composer,
 
-```
+```bash
 composer create-project krag/karch example-app
 ```
 
 Using the git repository url download the framework from github or run the following code on the terminal, opened in your folder.
 
-```
+```bash
 git clone https://github.com/Kenura-R-Gunarathna/KARCH-Framework.git
 ```
 
@@ -37,12 +37,12 @@ Class for the routes are included inside the `routes` folder as `web.php`.
 
 use 
 
-```
+```php
 use App\Route;
 ```
 to include the route class.
 
-```
+```php
 Route::post('/login', Controller::class, 'login');
 
 Route::post('/function', function () {
@@ -55,12 +55,12 @@ Class for the controllers are included inside the `routes` folder as `controller
 
 use 
 
-```
+```php
 use App\Controller;
 ```
 to include the controller class.
 
-```
+```php
 public static function login()
 {
     // code...
@@ -74,7 +74,7 @@ To view a html or php file. All the view file locations are given relative to th
 
 eg:- `/index.html` or `index.html` ( for a file as `index.html` inside the views folder )
 
-```
+```php
 view("{view-location}");
 ```
 
@@ -82,7 +82,7 @@ view("{view-location}");
 
 To redirect a web page insert
 
-```
+```php
 redirect("{full-url}");
 ```
 
@@ -92,7 +92,7 @@ here you should insert the full url of the web page.
 
 To load the assets like images, documents and videos for public view insert
 
-```
+```php
 asset("{relative-url-from-public-folder}");
 ```
 
@@ -102,7 +102,7 @@ here you should insert the relative url of the files inside the `public` folder 
 
 Return the `url` of a specific `route` in the website.
 
-```
+```php
 route("{route-name-or-uri}");
 ```
 
@@ -110,7 +110,7 @@ route("{route-name-or-uri}");
 
 Return the `$_REQUEST` values of the website.
 
-```
+```php
 request("{request-name}");
 ```
 
@@ -118,7 +118,7 @@ request("{request-name}");
 
 Return the `$_ENV` values of the website inside the `.env` file.
 
-```
+```php
 config("{config-name}");
 ```
 
@@ -126,7 +126,7 @@ config("{config-name}");
 
 Return the `$_GET` request values of the website.
 
-```
+```php
 get("{get-request-name}");
 ```
 
@@ -134,7 +134,7 @@ get("{get-request-name}");
 
 Return the `$_POST` request values of the website.
 
-```
+```php
 post("{post-request-name}");
 ```
 
@@ -142,7 +142,7 @@ post("{post-request-name}");
 
 Return the `$_COOKIE` values of the website.
 
-```
+```php
 cookie("{cookie-name}");
 ```
 
@@ -150,7 +150,7 @@ cookie("{cookie-name}");
 
 Return the `$_FILES` values of the website.
 
-```
+```php
 files("{file-name}");
 ```
 
@@ -158,7 +158,7 @@ files("{file-name}");
 
 Return the `$_SESSION` values of the website stored in the web server.
 
-```
+```php
 session("{session-name}");
 ```
 
@@ -168,36 +168,36 @@ Class for the requests are included inside the `includes` folder as `data_handli
 
 use 
 
-```
+```php
 use App\DataHandling;
 ```
 to include the requests class.
 
-```
+```php
 $data = new DataHandling();
 ```
 
 ### env data ###
 
-```
+```php
 echo $data->env->APP_NAME;
 ```
 
 ### get, post and session requests ###
 
-```
+```php
 echo $data->request->username;
 echo $data->request->password;
 ```
 ### get request ###
 
-```
+```php
 echo $data->get->username;
 echo $data->get->password;
 ```
 ### post request ###
 
-```
+```php
 echo $data->post->username;
 echo $data->post->password;
 ```
@@ -208,14 +208,14 @@ Class for the db queries are included inside the `includes` folder as `database.
 
 use 
 
-```
+```php
 use App\DB;
 ```
 to include the database class.
 
 ### Records selection ###
 
-```
+```php
 $data = DB::table("users")->query("where id='1'")->setFetchMode(PDO::FETCH_OBJ)->get();
 
 foreach ($data as $col) {
@@ -227,7 +227,7 @@ foreach ($data as $col) {
 
 ### Mass records insert ###
 
-```
+```php
 $data = DB::table("users")->insert([
     ['name' => 'lisara', 'age' => 24, 'email' => 'lisara@gmail.com', 'updated_at' => date('Y-m-d H:i:s'), 'created_at' => date('Y-m-d H:i:s')],
     ['name' => 'sanuli', 'age' => 14, 'email' => 'sanuli@gmail.com', 'updated_at' => date('Y-m-d H:i:s'), 'created_at' => date('Y-m-d H:i:s')],
@@ -239,7 +239,7 @@ return print($data); // whether insertion is successfull or not
 
 ### Single record insert ###
 
-```
+```php
 $data = DB::table("users")->setTableId("id")->setFetchMode(PDO::FETCH_OBJ)->create(
     [
         'name' => 'lisara',
@@ -257,7 +257,7 @@ foreach ($data as $col) {
 
 ### Update records ###
 
-```
+```php
 $data = DB::table("users")->query("where id='1'")->update(
     [
         'name' => 'Kenura',
@@ -271,7 +271,7 @@ return print($data); // count of updated records
 
 ### Delete records ###
 
-```
+```php
 $data = DB::table("users")->query("where id='16'")->delete();
 
 return print($data); // whether delete is successfull or not
@@ -281,7 +281,7 @@ return print($data); // whether delete is successfull or not
 
 All the migrations required to create tables are in the `database/migrations` folder, each with their respective table name.
 
-```
+```php
 <?php
 
 require_once __DIR__ . '/../../includes/error_handling.php';
@@ -310,7 +310,7 @@ try {
 
 to run a migration such as below run the code
 
-```
+```php
 php databse\migrations\{migration-filename}.php
 ```
 
@@ -320,43 +320,43 @@ Class for the error handling are included inside the `includes` folder as `error
 
 use 
 
-```
+```php
 use App\ErrorHandling;
 ```
 to include the ErrorHandling class.
 
 ### view the 404 error ###
 
-```
+```php
 ErrorHandling::_404();
 ```
 
 for custom `404` error message
 
-```
+```php
 ErrorHandling::_404({error-message});
 ```
 
 ### view the 405 error ###
 
-```
+```php
 ErrorHandling::_405();
 ```
 
 for custom `405` error message
 
-```
+```php
 ErrorHandling::_405({error-message});
 ```
 
 ### view the 500 error ###
 
-```
+```php
 ErrorHandling::_500();
 ```
 
 for custom `500` error message
 
-```
+```php
 ErrorHandling::_500({error-message});
 ```
